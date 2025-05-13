@@ -2,20 +2,21 @@
   "name": "xero",
   "version": "1.0.0",
   "description": "All modules needed to run Xero.",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "homepage": "https://github.com/lejoobie/Xero#readme",
+  "bugs": {
+    "url": "https://github.com/lejoobie/Xero/issues"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/lejoobie/Xero.git"
   },
-  "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/lejoobie/Xero/issues"
+  "author": "",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "homepage": "https://github.com/lejoobie/Xero#readme",
   "dependencies": {
     "discord.js": "^14.19.3"
   },

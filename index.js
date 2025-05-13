@@ -3,12 +3,13 @@
 // Created by Jonathan Cales
 // This project is for me to grow my understanding of backend development - this is why the documentation is so large.
 // ------------------------
-// BRINGING THE BOT ONLINE - 5/5/2025 J.C
+
+// BRINGING THE BOT ONLINE - 5/5/2025
 
 // This is what is called "reverse assignment".
 // "Require" is just a function from Node.js used to grab from files or packages. discord.js is targeted, returning many objects from the package.
 // const {} is storing specific objects from it's target.
-const { Client, Events, GatewayIntentBits } = require('discord.js');
+const { Client, Events, GatewayIntentBits} = require('discord.js');
 // This is doing the same thing, storing the token by pulling it from another file.
 const { token } = require('./config.json');
 
@@ -19,7 +20,7 @@ const { token } = require('./config.json');
 // "intents" specifically is used to tell discord what events the bot will take.
 // "GatewayIntentBits" is an object from earlier, taken from Discord.js, that stores different types of intents/events.
 // "Guilds" is a specific part of the GatewayIntentsObject, being a specific or general type of event/intent(s).
-const client = new Client({ intents: [GatewayIntentBits.Guilds] });
+const client = new Client({ intents: [GatewayIntentBits.Guilds]});
 
 // This is an arrow function. It's just a smaller way to define a function.
 // Our client instance is calling the "once" method, which listens to a specific event only once, and then calls a function as a result.
